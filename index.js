@@ -29,7 +29,7 @@ const MovieSchema = new mongoose.Schema({
 const Movie = mongoose.model(
   "Movie",
   MovieSchema,
-  "movies" // HUOM. Kohdistetaan skeeman operaatiot tähän kokoelmaan
+  "movies"
 );
 
 //Haetaan viisi elokuvaa tietokannasta
