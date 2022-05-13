@@ -1,8 +1,10 @@
 //palvelimen portti
-const PORT = process.env.PORT || 8081;
+const PORT = process.env.PORT || 5000;
 
 var express = require("express");
 var app = express();
+var cors = require('cors')
+app.use(cors())
 var fs = require("fs");
 var bodyParser = require("body-parser");
 var path = require("path");
@@ -161,5 +163,5 @@ app.delete("/api/delete/:id", function (req, res, next) {
 });
 
 app.listen(PORT, function () {
-  console.log("App listening on port 8081");
+  console.log("App listening on port 5000");
 });
